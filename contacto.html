@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto</title>
+    <link rel="stylesheet" type="text/css" href="estilo.css"/>
+</head>
+
+<body>
+    <section id='GridContacto'>
+        <header id="cabecera" class='contenedorCabeza'> <!--Menu de navegación, logo y banner para todas las páginas-->
+            <nav> <!--Menu que se mantenga en la parte superior del navegador-->
+                <ul class="listaCabecera">
+                    <li class="listItemCabecera"><a href="index.html">Home</a></li>
+                    <li class="listItemCabecera"><a href="proyectos.html">Proyectos</a></li>
+                    <li class="listItemCabecera"><a href="publicaciones.html">Publicaciones</a>
+                        <ul>
+                            <li><a href="blog.html">Blog</a></li>
+                        </ul>
+                    </li>
+                    <li class="listItemCabecera"><a href="audiovisuales.html">Audiovisuales</a></li>
+                    <li class="listItemCabecera"><a href="quienes-somos.html">Quienes somos</a></li>
+                    <li class="listItemCabecera"><a href="contacto.html">Contacto</a></li>
+                </ul>
+            </nav>
+            <img src="Perfil.png" alt="Tres lineas verticales y tres horizontales, nombre del grupo: Entramando Saberes" class="medidasLogoCabezera">
+        </header>
+
+        <section id="formCentral">
+            <h1 class="tituloContacto">Contacto</h1>
+            <fieldset class="formularioContactoFieldset">
+                <legend>ENVIANOS TU CONSULTA</legend>
+                <br>
+                <form action="contacto.html" name="formulario" method="post" enctype="" class="formularioContactoFuente">
+
+                    <label for="nombre">Nombre   </label><br><input type="text" name="nombre" placeholder="Nombre" class="formularioContactoInput"> <br>
+                    <label for="email">Email   </label><br><input type="text" name="email" placeholder="Email" class="formularioContactoInput"> <br>
+                    <label for="equipo">Equipo  </label><br><select name="equipo" class="formularioContactoInput">
+                        <option>General</option>
+                        <option>Audiovisual</option>
+                        <option>Comunicación</option>
+                        <option>Talleres y exposiciones</option>
+                    </select>
+                    <br>
+                    <label for="comentario">Comentario   </label><br><input type="text" name="comentario" class="formularioContactoInput" style="height: 80px;">
+                    <br>
+                    <p style="font-size: 15px;"><input type="checkbox" name="ToS value="1"/> He leido y acepto los terminos y condiciones</p> <br>
+                    <input type="submit" name="Enviar" value="Enviar" class="sosUnBoton"/>
+                    <input type="reset" name="Borrar" value="Borrar" class="sosUnBoton"/>
+            </fieldset>
+
+            </form>
+            <p style="text-align: center;">También nos podes mandar una mail a <strong>entramandosaberes@filo.uba.ar</strong></p>
+            
+        </section>
+        <hr> 
+        
+        <footer id="footer"> <!--Pie para todas las páginas-->
+            
+            <ul class="listaFooterColumnaIzq"> <!--Lista de navegacion-->
+                <li><a href="index.html">Home</a></li>
+                <li><a href="proyectos.html">Proyectos</a></li>
+                <li><a href="publicaciones.html">Publicaciones</a></li>    <!--lo quiero en 2 columnas-->
+                <li><a href="audiovisuales.html">Audiovisuales</a></li> 
+            </ul>
+            <ul class="listaFooterColumnaDer">
+                <li><a href="quienes-somos.html">Quienes somos</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+                <li></li>© <a href="index.html">Entramando Saberes</a></li>
+            </ul>
+        
+            <div class='logoYRedes'>
+                <img src="LogoES-colorHoriz.png" alt="Tres lineas verticales y tres horizontales, nombre del grupo: Entramando Saberes" class="medidasLogoFooter"> <!--Logo y nombre-->
+                <br>
+                <a href="https://www.facebook.com/"><img src="Facebook.png" alt="Boton circular con logo de Facebook en blanco y negro" class="iconosRRSS"></a>
+                <a href="https://www.instagram.com/"><img src="Instagram.png" alt="Boton circular con  logo de Instagram en blanco y negro" class="iconosRRSS"></a>
+                <a href="https://www.youtube.com/"><img src="Youtube.png" alt="Boton circular con logo de Youtube en blanco y negro" class="iconosRRSS"></a>
+            </div>
+        </footer>
+
+    </section>
+
+</body>
+</html>
